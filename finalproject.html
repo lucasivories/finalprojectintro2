@@ -1,0 +1,20 @@
+ <!DOCTYPE HTML>
+<html>
+  <head><script type="text/javascript">
+    function goToNewPage()
+    {
+        var url = document.getElementById('list').value;
+        if(url != 'none') {
+            window.location = url;
+        }
+    }
+</script></head>
+  <body>
+<select name="list" id="list" accesskey="target">
+    <option value='none' selected>Choose a theme</option>
+    <option value="index.html">Theme 1</option>
+    <option value="theme2.html">Theme 2</option>
+    <option value="theme3.html">Theme 3</option>
+<select>
+<input type=button value="Go" onclick="goToNewPage()" /></body>
+</html>
