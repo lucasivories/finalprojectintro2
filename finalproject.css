@@ -1,0 +1,11 @@
+div {
+  color: green;
+}
+
+body {
+  padding: 25px 50px 75px 100px;
+  border: 2px solid black;
+  margin: 25px 50px 75px 100px;
+	font-family: "PT Sans";
+	   background-color: #f6f6f6;
+}
