@@ -2,10 +2,9 @@
 <html>
 <head><h1> NYC HIGH SCHOOLS: FIND AND COMPARE </h1>
 <h4> By Dechen Pema and Lucas Amory </h4>
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="finalproject.css">
-<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"></script>
 </head>
+
 <body>
 <form method="GET" action="finalproject.py">
 
@@ -13,31 +12,24 @@
   <div data-role="header">
     <h2>Welcome to Dechen and Lucas'<br>NYC High School Searcher!</h2>
   </div>
-  
-<nav> 
-<a href= "https://github.com/cstuykuang/intro2/blob/master/html/html_basics1.md">Github</a>
-</nav>
 
-Borough: <br>
+	Borough: <br>
 	<select name="borough">
     	<option value="bkln">Brooklyn</option>
         <option value="quen">Queens</option>
         <option value="mhtn">Manhattan</option>
         <option value="si">Staten Island</option>
         <option value="bx">Bronx</option><br>
-  
-  
-  <div data-role="main" class="ui-content">
-    <form method="post" action="/action_page_post.php"><br>
+	</form>
+	<form>
     
-      <label for="satscore">Average SAT Score:</label>
-     	 <input type="range" name="satscore" id="satscore" value="400" min="0" size =2 max="800" data-show-value="true"><br>
-      
-      <label for="apstudents">Number of AP Courses Offered:</label>
-			<input type="range" name="apstudents" id="ap students" value="10" min="0" max="30" data-show-value="true"><br>
-			
-	<label for="students">Number of Students per Grade:</label>
-			<input type="range" name="students" id="students" value="500" min="20" max="2000" data-show-value="true"><br>
+	Range of AP Courses Offered
+	<input type="radio" name="apstudents" value="apstudents">Less than 5<br>
+	<input type="radio" name="apstudents" value="apstudents">5-10<br>
+	<input type="radio" name="apstudents" value="apstudents">11-15<br>
+	<input type="radio" name="apstudents" value="apstudents">16-20<br>
+	<input type="radio" name="apstudents" value="apstudents">More than 20<br>
+
       <input type="submit" data-inline="true" value="Submit">
     </form>
   </div>
