@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head><h1> NYC HIGH SCHOOLS: FIND AND COMPARE </h1>
-<h4> By Dechen Pema and Lucas Amory </h4>
+<h4> <h2>Welcome to Dechen and Lucas'<br>
+NYC High School Searcher!</h2>
+  </div> </h4>
 <link rel="stylesheet" href="finalproject.css">
 </head>
 
@@ -10,27 +12,57 @@
 
 <div data-role="page">
   <div data-role="header">
-    <h2>Welcome to Dechen and Lucas'<br>NYC High School Searcher!</h2>
-  </div>
 
-	Borough: <br>
+    <div>Name</div>
+    <input type="text">
+	<div>Borough</div>
 	<select name="borough">
     	<option value="bkln">Brooklyn</option>
         <option value="quen">Queens</option>
         <option value="mhtn">Manhattan</option>
         <option value="si">Staten Island</option>
         <option value="bx">Bronx</option><br>
-	</form>
-	<form>
+    </select><br>
     
-	Range of AP Courses Offered
-	<input type="radio" name="apstudents" value="apstudents">Less than 5<br>
-	<input type="radio" name="apstudents" value="apstudents">5-10<br>
-	<input type="radio" name="apstudents" value="apstudents">11-15<br>
-	<input type="radio" name="apstudents" value="apstudents">16-20<br>
-	<input type="radio" name="apstudents" value="apstudents">More than 20<br>
+	<div>Range of Number of AP Courses Offered</div>
+	<input type="radio" name="apstudents" value="apstudents">
+    Less than 5<br>
+	<input type="radio" name="apstudents" value="apstudents">
+    5-10<br>
+	<input type="radio" name="apstudents" value="apstudents">
+    11-15<br>
+	<input type="radio" name="apstudents" value="apstudents">
+    16-20<br>
+	<input type="radio" name="apstudents" value="apstudents">
+    More than 20<br>
+    
+    <div>Number of Students per Grade</div>
+    <input type="radio" name="gradestudents" value="gradestudents">
+    Less than 100<br>
+	<input type="radio" name="gradestudents" value="gradestudents">
+    100-300<br>
+	<input type="radio" name="gradestudents" value="gradestudents">
+    300-500<br>
+	<input type="radio" name="gradestudents" value="gradestudents">
+    500-700<br>
+	<input type="radio" name="gradestudents" value="gradestudents">
+    700-1000<br>
+    <input type="radio" name="gradestudents" value="gradestudents">
+    More than 1000<br>
+    
+    <div>Average SAT Score</div>
+    <input type="radio" name="sat" value="sat">
+    Less than 300<br>
+	<input type="radio" name="sat" value="sat">
+    300-400<br>
+	<input type="radio" name="sat" value="sat">
+    400-500<br>
+	<input type="radio" name="sat" value="sat">
+    500-600<br>
+	<input type="radio" name="sat" value="sat">
+    More than 600<br>
 
-      <input type="submit" data-inline="true" value="Submit">
+      <h2><input type="submit" data-inline="true" value="Submit"></h2>
     </form>
   </div>
 </div>
