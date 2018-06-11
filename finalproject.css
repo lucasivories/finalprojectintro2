@@ -1,11 +1,98 @@
-.green {
-  background-color: green;
-}
-
-.red {
-  background-color: red;
-}
-
 body {
   font-family: "PT Serif";
+  background-color: #F6F6F6;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+		width:100%;
+		display: inline-block;
+    font-family:"PT Serif";
+    overflow: hidden;
+    background-color: #E5F0F1;
+		border-top-style: solid;
+		border-bottom-style: solid;
+	  border-color: white;
+
+}
+.table {
+	display: table;
+	margin: 0 auto;
+}
+
+li {
+    float: left;
+		color: #393F44;
+
+}
+a{
+	color: #393F44;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: #393F44;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: white;
+    color: #393F44;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+    		color:  ##393F44;
+        min-width: 120px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: ##393F44;;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover {background-color: #cccccc}
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+        background-color: white;
+        color: ##393F44;
+    }
+
+input.button{
+	display: inline-block;
+	color: white;
+	background-color:##393F44;
+	font-family: "Courier New";
+	font-size: 13px;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+button.button{
+	display: inline-block;
+	color: white;
+	background-color:##393F44;
+	font-family: "Courier New";
+	font-size: 13px;
+	text-align: center;
+	padding: 14px 16px;
+
 }
