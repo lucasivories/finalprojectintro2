@@ -3,35 +3,60 @@ print "Content-type: text/html\n"
 
 import cgi
 
-#help you see errors
+# displays error messages in your browser
 import cgitb
 cgitb.enable()
 
-head = '''<!DOCTYPE html>
-<html>
-  <head>
-   <title>2017 NYC High School Directory</title>
-  </head>
-  <body>
-'''
-
+# function that will package all form information in a python dictionary
 def convertToDictionary(fieldStorage):
    output = {}
    for key in fieldStorage.keys():
      output[key] = fieldStorage[key].value
    return output
-   
-form = convertToDictionary(cgi.FieldStorage()) 
-   
-fh = open("highschool.csv", "r")
-data = fh.readlines() #returns a list, each item is a line
-for row in data[1:]:
-  #removes the \n character and turns each row from a string to an array of values
-  row = row[:-1].split(",")
-  
-options = ""
-fruits = ["apple", "orange", "banana", "durian"]
-for fruit in fruits:
-  options += "<option value={fruit}>{fruit}</option>".format(fruit = fruit)
 
-dropdown = "<select>{options}</select>".format(options = options)
+def readFile():
+    import csv
+    with open("highschool.csv") as file:
+    	reader = csv.DictReader(file)
+    	data = [r for r in reader]
+    	return data
+
+readFile()
+
+data = readFile()
+
+def findSchool(data):
+   info  = []
+   for row in data:
+         info.append(row['school_name'])
+         info.append(row['boro'])
+         info.append(row['advancedplacement_courses'])
+         info.append(row['website'])
+         info.append(row['total_students'])
+   return info
+
+def main():
+   form = cgiFieldStorageToDict(cgi.FieldStorage())
+   print form
+   print "<br>"
+
+   header = ['School', 'Borough', 'Website', 'Total students', 'School', 'Borough', 'Website', 'Total students',
+   'School', 'Borough', 'Website', 'Total students', 'School', 'Borough', 'Website', 'Total students', 'School', 'Borough', 'Website', 'Total students']
+      info_2 = findSchool(data)
+      for i in range(len(info_2)):
+          if header[i] == 'Total students':
+             print header[i], ':', info[i], '<p>'
+          else:
+             print header[i], ':', info[i], '<br>'
+
+print '''<!DOCTYPE html>
+<html>
+  <head>
+   <title>Your Results!</title>
+  </head>
+  <body>'''
+
+print ''' </body>
+</html>'''
+
+main()
