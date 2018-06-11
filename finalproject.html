@@ -1,20 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head><h1> NYC HIGH SCHOOLS: FIND AND COMPARE </h1>
-<h4> <h2>Welcome to Dechen and Lucas'<br>
-NYC High School Searcher!</h2>
-  </div> </h4>
 <link rel="stylesheet" href="finalproject.css">
-<link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
 </head>
 
 <body>
 <form method="GET" action="finalproject.py">
+<ul>
+  <div class="table">
+		  <li><a href=file:///Users/dechenpema/Desktop/homepage.html>Home Page</a></li>
+		  <li><a href=file:///Users/dechenpema/Desktop/finalproject.html>High School Searcher</a></li>
+      <li class = "dropdown">
+			     <a href="javascript:void(0)" class="dropbtn">Specialized High Schools</a>
+			     <div class="dropdown-content">
+					        <a href=file:///Users/dechenpema/Desktop/stuyvesant.html>Stuyvesant High School</a>
+					        <a href=file:///Users/dechenpema/Desktop/bronxsci.html>Bronx Science</a>
+					        <a href=file:///Users/dechenpema/Desktop/brooklyntech.html>Brooklyn Tech</a>
+			     </div>
+      </li>
+   </div>
+</ul>
+
 
 <div data-role="page">
   <div data-role="header">
 
-    <div class="red">Name</div>
+    <div>Name</div>
     <input type="text">
 	<div>Borough</div>
 	<select name="borough">
@@ -24,8 +35,8 @@ NYC High School Searcher!</h2>
         <option value="si">Staten Island</option>
         <option value="bx">Bronx</option><br>
     </select><br>
-    
-	<div class="green">Range of Number of AP Courses Offered</div>
+
+	<div>Range of Number of AP Courses Offered</div>
 	<input type="radio" name="apstudents" value="apstudents">
     Less than 5<br>
 	<input type="radio" name="apstudents" value="apstudents">
@@ -36,7 +47,7 @@ NYC High School Searcher!</h2>
     16-20<br>
 	<input type="radio" name="apstudents" value="apstudents">
     More than 20<br>
-    
+
     <div>Number of Students per Grade</div>
     <input type="radio" name="gradestudents" value="gradestudents">
     Less than 100<br>
@@ -50,7 +61,7 @@ NYC High School Searcher!</h2>
     700-1000<br>
     <input type="radio" name="gradestudents" value="gradestudents">
     More than 1000<br>
-    
+
     <div>Average SAT Score</div>
     <input type="radio" name="sat" value="sat">
     Less than 300<br>
@@ -67,6 +78,6 @@ NYC High School Searcher!</h2>
     </form>
   </div>
 </div>
- 
+
 </body>
 </html>
