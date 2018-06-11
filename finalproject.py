@@ -36,7 +36,7 @@ def findSchool(data):
    return info
 
 def main():
-   form = cgiFieldStorageToDict(cgi.FieldStorage())
+   form = convertToDictionary(cgi.FieldStorage())
    print form
    print "<br>"
 
